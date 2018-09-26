@@ -1,4 +1,4 @@
 {
-  name: 'Test',
-  age: 9
+  "name": "Test",
+  "age": 9
 }
