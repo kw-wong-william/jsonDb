@@ -1,120 +1,325 @@
 {
+    "code": {
+        "message": "操作成功",
+        "status": "success"
+    },
     "login": {
-        "code": "",
-        "message": "",
-        "data": ""
+        "code": 200,
+        "message": "登陸成功"
     },
     "menu": {
-        "code": {},
-        "message": {},
-        "data": {
-            "results": [
-                {
-                    "code": "01",
-                    "path": "01",
-                    "subMenu": null
-                },
-                {
-                    "code": "02",
-                    "path": "02",
-                    "subMenu": null
-                },
-                {
-                    "code": "03",
-                    "path": "03",
-                    "subMenu": null
-                },
-                {
-                    "code": "04",
-                    "path": "04",
-                    "subMenu": null
-                },
-                {
-                    "code": "05",
-                    "path": "",
-                    "subMenu": [
-                        {
-                            "code": "S01",
-                            "path": "S01",
-                            "subMenu": null
-                        },
-                        {
-                            "code": "S02",
-                            "path": "S02",
-                            "subMenu": null
-                        },
-                        {
-                            "code": "S03",
-                            "path": "S03",
-                            "subMenu": null
-                        }
-                    ]
-                },
-                {
-                    "code": "06",
-                    "path": "",
-                    "subMenu": [
-                        {
-                            "code": "S01",
-                            "path": "S01",
-                            "subMenu": null
-                        },
-                        {
-                            "code": "S02",
-                            "path": "S02",
-                            "subMenu": null
-                        },
-                        {
-                            "code": "S03",
-                            "path": "S03",
-                            "subMenu": null
-                        }
-                    ]
-                },
-                {
-                    "code": "07",
-                    "path": "",
-                    "subMenu": [
-                        {
-                            "code": "S01",
-                            "path": "S01",
-                            "subMenu": null
-                        },
-                        {
-                            "code": "S02",
-                            "path": "S02",
-                            "subMenu": null
-                        },
-                        {
-                            "code": "S03",
-                            "path": "S03",
-                            "subMenu": null
-                        }
-                    ]
-                },
-                {
-                    "code": "08",
-                    "path": "",
-                    "subMenu": [
-                        {
-                            "code": "S01",
-                            "path": "S01",
-                            "subMenu": null
-                        },
-                        {
-                            "code": "S02",
-                            "path": "S02",
-                            "subMenu": null
-                        },
-                        {
-                            "code": "S03",
-                            "path": "S03",
-                            "subMenu": null
-                        }
-                    ]
-                }
-            ]
-        }
+        "results": [
+            {
+                "code": "HOME_MGMT",
+                "path": "/content/home",
+                "isLeaf": false,
+                "subMenu": null
+            },
+            {
+                "code": "MERCHANT_MGMT",
+                "path": "",
+                "isLeaf": true,
+                "subMenu": [
+                    {
+                        "code": "MERCHANT_LIST",
+                        "path": "/content/merchantMgmt",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "MERCHANT_ACCESS_IP",
+                        "path": "/content/whitelistMgmt",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "MERCHANT_BALANCE",
+                        "path": "/content/balanceMerchantMgmt",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "MERCHANT_ORDER_ADJUSTMENT_MGMT",
+                        "path": "/content/merchantOrderAdjustmentMgmt",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "MERCHANT_BALANCE_ADJUSTMENT_MGMT",
+                        "path": "/content/merchantBalanceAdjustmentMgmt",
+                        "isLeaf": null,
+                        "subMenu": null
+                    }
+                ]
+            },
+            {
+                "code": "TERMINAL_USER_MGMT",
+                "path": "",
+                "isLeaf": true,
+                "subMenu": [
+                    {
+                        "code": "BLACKLIST_CARD",
+                        "path": "/content/blacklistMgmt",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "RESTRICTED_CARD",
+                        "path": "/content/restrictedList",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "EXCEPTION_CARD",
+                        "path": "/content/exceptionCard",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "TRANSACTION_CARD",
+                        "path": "/content/transactionCard",
+                        "isLeaf": null,
+                        "subMenu": null
+                    }
+                ]
+            },
+            {
+                "code": "CHANNEL_MGMT",
+                "path": "",
+                "isLeaf": true,
+                "subMenu": [
+                    {
+                        "code": "CHANNEL_LIST",
+                        "path": "/content/channelWDMgmt",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "CHANNEL_BALANCE",
+                        "path": "/content/balanceChannelMgmt",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "CHANNEL_WITHDRAW_ORDER_MGMT",
+                        "path": "/content/channelOrder",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "CHANNEL_DEPOSIT_ORDER_MGMT",
+                        "path": "",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "CHANNEL_ORDER_ADJUSTMENT_MGMT",
+                        "path": "/content/channelOrderAdjustmentMgmt",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "CHANNEL_BALANCE_ADJUSTMENT_MGMT",
+                        "path": "/content/channelBalanceAdjustmentMgmt",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "CHANNEL_SUSPEND_MGMT",
+                        "path": "/content/channelSuspendMgmt",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "CHANNEL_STRATEGY_SETTING_MGMT",
+                        "path": "/content/channelStrategy",
+                        "isLeaf": null,
+                        "subMenu": null
+                    }
+                ]
+            },
+            {
+                "code": "PAYMENT_MGMT",
+                "path": "",
+                "isLeaf": true,
+                "subMenu": [
+                    {
+                        "code": "PAYMENT_PROVIDER_MGMT",
+                        "path": "/content/channelProvider",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "PAYMENT_TYPE_MGMT",
+                        "path": "/content/channelPaymentType",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "CHANNEL_SUPPLIER_MGMT",
+                        "path": "/content/channelSupplier",
+                        "isLeaf": null,
+                        "subMenu": null
+                    }
+                ]
+            },
+            {
+                "code": "WITHDRAW_ORDER_MGMT",
+                "path": "",
+                "isLeaf": true,
+                "subMenu": [
+                    {
+                        "code": "WITHDRAW_ORDER_CHECK",
+                        "path": "/content/orderCheck/pending",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "WITHDRAW_ERROR_ORDER",
+                        "path": "/content/errorOrder",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "WITHDRAW_EXCEPTION_ORDER",
+                        "path": "/content/orderCheck/exception",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "WITHDRAW_TRANSACTION_ORDER",
+                        "path": "/content/orderCheck/history",
+                        "isLeaf": null,
+                        "subMenu": null
+                    }
+                ]
+            },
+            {
+                "code": "DEPOSIT_ORDER_MGMT",
+                "path": "",
+                "isLeaf": true,
+                "subMenu": [
+                    {
+                        "code": "DEPOSIT_ORDER_CHECK",
+                        "path": "",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "DEPOSIT_ERROR_ORDER",
+                        "path": "",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "DEPOSIT_EXCEPTION_ORDER",
+                        "path": "",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "DEPOSIT_TRANSACTION_ORDER",
+                        "path": "/content/recharge",
+                        "isLeaf": null,
+                        "subMenu": null
+                    }
+                ]
+            },
+            {
+                "code": "SYSTEM_MGMT",
+                "path": "",
+                "isLeaf": true,
+                "subMenu": [
+                    {
+                        "code": "USER_MGMT",
+                        "path": "/content/userMgmt",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "ROLE_MGMT",
+                        "path": "/content/roleMgmt",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "MODULE_MGMT",
+                        "path": "/content/moduleMgmt",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "RESOURCE_MGMT",
+                        "path": "/content/resourceMgmt",
+                        "isLeaf": null,
+                        "subMenu": null
+                    }
+                ]
+            },
+            {
+                "code": "AUTH_MGMT",
+                "path": "",
+                "isLeaf": true,
+                "subMenu": [
+                    {
+                        "code": "USER_PERMISSION_MGMT",
+                        "path": "",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "ROLE_PERMISSION_MGMT",
+                        "path": "",
+                        "isLeaf": null,
+                        "subMenu": null
+                    }
+                ]
+            },
+            {
+                "code": "DIGITAL_MGMT",
+                "path": "",
+                "isLeaf": true,
+                "subMenu": [
+                    {
+                        "code": "CHANNEL_STRATEGY_DIMENSION_MGMT",
+                        "path": "/content/channelStrategyGroup",
+                        "isLeaf": null,
+                        "subMenu": null
+                    },
+                    {
+                        "code": "CHANNEL_STRATEGY_DIMENSION_PARAMETER_MGMT",
+                        "path": "/content/channelStrategyParameter",
+                        "isLeaf": null,
+                        "subMenu": null
+                    }
+                ]
+            },
+            {
+                "code": "REPORT_MGMT",
+                "path": "",
+                "isLeaf": false,
+                "subMenu": null
+            }
+        ],
+        "message": "操作成功",
+        "status": "success"
+    },
+    "userinfo": {
+        "results": {
+            "id": null,
+            "realName": "william",
+            "gender": null,
+            "phone": null,
+            "email": "william.sdsystem@gmail.com",
+            "account": "william",
+            "password": null,
+            "lastLoginIp": null,
+            "lastLoginTime": "2019-01-14 15:25:05",
+            "status": null,
+            "roleName": null
+        },
+        "message": "操作成功",
+        "status": "success"
     },
     "smaple": {
         "smaple": "smaple"
